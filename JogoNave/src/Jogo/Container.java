@@ -15,6 +15,6 @@ public class Container extends JFrame {
     }
 
     public static void main(String[] args) {
-        Container container = new Container();
+        new Container();
     }
 }
