@@ -16,7 +16,7 @@ public class Missil {
     public Missil(int x,int y){
         this.x=x;
         this.y=y;
-        ImageIcon referencia=new ImageIcon("C:\\Users\\Paulo Pereira\\Documents\\NetBeansProjects\\JogoNave\\src\\Imagens\\missil.png");
+        ImageIcon referencia=new ImageIcon("src\\Imagens\\missil.png");
         imagem=referencia.getImage();
         isVisivel=true;
     }
