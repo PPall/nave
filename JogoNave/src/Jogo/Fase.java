@@ -24,8 +24,8 @@ public class Fase extends JPanel implements ActionListener{
         setDoubleBuffered(true);
         addKeyListener(new TecladoAdapter());
         
-        ImageIcon referencia1= new ImageIcon("C:\\Users\\Paulo Pereira\\Documents\\NetBeansProjects\\JogoNave\\src\\Imagens\\fundo.png");
-        fundo = referencia1.getImage();
+        ImageIcon referencia= new ImageIcon("src\\Imagens\\fundo.png");
+        fundo = referencia.getImage();
         
         nave = new Nave();
         
