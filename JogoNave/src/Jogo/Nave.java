@@ -17,7 +17,7 @@ public class Nave {
     private int altura,largura;
     public Nave(){
         
-        ImageIcon referencia = new ImageIcon("C:\\Users\\Paulo Pereira\\Documents\\NetBeansProjects\\JogoNave\\src\\Imagens\\nave.png");
+        ImageIcon referencia = new ImageIcon("src\\Imagens\\nave.png");
 	imagem = referencia.getImage();
         misseis=new ArrayList<Missil>();
         x = 100;
