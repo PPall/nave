@@ -6,7 +6,7 @@ public class Container extends JFrame {
 
     public Container() {
         add(new Fase());
-        setSize(500,420);
+        setSize(1024,768);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);

@@ -1,6 +1,7 @@
 package Jogo;
 
 import java.awt.Image;
+import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,7 @@ public class Nave {
     private int altura,largura;
     public Nave(){
         
-        ImageIcon referencia = new ImageIcon("C:\\Users\\Paulo Pereira\\Documents\\NetBeansProjects\\JogoNave\\src\\Imagens\\nave.png");
+        ImageIcon referencia = new ImageIcon("src\\Imagens\\nave.png");
 	imagem = referencia.getImage();
         misseis=new ArrayList<Missil>();
         x = 100;
@@ -40,6 +41,9 @@ public class Nave {
     }
     public void atira(){
         this.getMisseis().add(new Missil(x+largura/3,y+altura/2));
+    }
+    public Rectangle getBounds(){
+        return new Rectangle(x,y,largura,altura);
     }
     
     public void keyPressed(KeyEvent tecla){

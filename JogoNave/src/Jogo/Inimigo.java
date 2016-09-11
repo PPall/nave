@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.ImageIcon;
 
-public class Missil {
+public class Inimigo {
     private int x,y;
     boolean isVisivel;
     private int largura, altura;
@@ -15,19 +15,20 @@ public class Missil {
     private static final int COMPRIMENTO=420;
     private static final int VELOCIDADE=2;
     
-    public Missil(int x,int y){
+    public Inimigo(int x,int y){
         this.x=x;
         this.y=y;
-        ImageIcon referencia=new ImageIcon("src\\Imagens\\missil.png");
+        ImageIcon referencia=new ImageIcon("src\\Imagens\\inimigo_1.png");
         this.largura=imagem.getWidth(null);
         this.altura=imagem.getHeight(null);
         imagem=referencia.getImage();
         isVisivel=true;
     }
     public void mexer(){
-        this.y-=VELOCIDADE;
-        if(y>COMPRIMENTO)
-            isVisivel=false;
+        if(this.y<0)
+            this.y=COMPRIMENTO;
+        else
+            this.y-=VELOCIDADE;
     }
     
     public boolean isIsVisivel() {
