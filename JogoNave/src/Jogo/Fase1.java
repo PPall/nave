@@ -15,22 +15,22 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 import java.util.ArrayList;
 
-public class Fase extends JPanel implements ActionListener {
+public class Fase1 extends JPanel implements ActionListener {
 
     private Image fundo;
     private Nave nave;
     private Timer timer;
     private boolean emJogo, continuar;
     private List<Inimigo> inimigo;
-    private int[][] coordenadas = {{2680, 129}, {2900, 159}, {1680, 189},
-    {1080, 409}, {880, 239}, {1180, 339}, {1090, 359},
-    {1060, 150}, {1090, 250}, {2280, 309}, {860, 145}, {810, 170},
-    {1230, 259}, {890, 180}, {830, 160}, {1240, 159}, {1290, 130},
-    {1220, 300}, {1200, 359}, {960, 150}, {840, 190}, {1110, 320},
-    {1160, 120}, {1040, 280}, {1120, 228}, {790, 270}, {1000, 130},
-    {1220, 400}, {1156, 428}, {756, 420}};
+    private int[][] coordenadas = {{2380, 29}, {2600, 59}, {1380, 89},
+    {780, 109}, {580, 139}, {880, 239}, {790, 259},
+    {760, 50}, {790, 150}, {1980, 209}, {560, 45}, {510, 70},
+    {930, 159}, {590, 80}, {530, 60}, {940, 59}, {990, 30},
+    {920, 200}, {900, 259}, {660, 50}, {540, 90}, {810, 220},
+    {860, 20}, {740, 180}, {820, 128}, {490, 170}, {700, 30},
+    {920, 300}, {856, 328}, {456, 320}};
 
-    public Fase() {
+    public Fase1() {
 
         setFocusable(true);
         setDoubleBuffered(true);

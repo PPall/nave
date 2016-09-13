@@ -1,12 +1,14 @@
 package Jogo;
 
+import java.awt.Component;
 import javax.swing.JFrame;
 
 public class Container extends JFrame {
-
+    
+    
     public Container() {
         add(new Fase());
-        setSize(500,420);
+        setSize(800, 600);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -16,5 +18,6 @@ public class Container extends JFrame {
 
     public static void main(String[] args) {
         new Container();
+        
     }
 }
