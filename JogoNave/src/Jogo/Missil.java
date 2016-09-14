@@ -17,7 +17,7 @@ public class Missil {
         this.x = x;
         this.y = y;
         
-        ImageIcon referencia = new ImageIcon("src\\Imagens\\inimigo_2.png");
+        ImageIcon referencia = new ImageIcon("src\\Imagens\\missil.png");
         imagem = referencia.getImage();
         
         largura = imagem.getWidth(null);

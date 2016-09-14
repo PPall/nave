@@ -19,7 +19,8 @@ public class Nave {
 
     public Nave() {
 
-        ImageIcon referencia = new ImageIcon("src\\Imagens\\nave.png");
+        
+        ImageIcon referencia = new ImageIcon("src\\Imagens\\Solaris.gif");
         imagem = referencia.getImage();
         misseis = new ArrayList<Missil>();
         x = 370;
